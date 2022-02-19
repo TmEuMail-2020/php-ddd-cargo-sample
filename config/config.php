@@ -24,6 +24,7 @@ if (is_file($cachedConfigFile)) {
     $config = json_decode(file_get_contents($cachedConfigFile), true);
 } else {
     $aggregator = new ConfigAggregator([
+        \Zend\Expressive\Router\AuraRouter\ConfigProvider::class,
         \Zend\Expressive\ConfigProvider::class,
         \Zend\Expressive\Router\ConfigProvider::class,
         \Zend\HttpHandlerRunner\ConfigProvider::class

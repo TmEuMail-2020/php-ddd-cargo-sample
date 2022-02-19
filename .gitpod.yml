@@ -1,8 +1,13 @@
 tasks:
   - init: |
       docker-compose pull
+      composer install
     command: |
-      mv .env.dist .env
+      cp .env.dist .env
       # to avoid "file not found" error
       chmod 777 .
       docker-compose up
+ports:
+  - port: 8080
+    visibility: private
+    onOpen: open-preview

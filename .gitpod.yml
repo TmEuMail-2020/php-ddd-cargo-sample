@@ -1,7 +1,8 @@
 tasks:
   - init: |
       docker-compose pull
-      # must use composer v1, hence directly use project provided composer php archive file
+      # must use composer v1 newest! already replaced phar file with newest manually and committed
+      # and then directly use project provided composer php archive file
       yes | php composer.phar install
     command: |
       cp .env.dist .env

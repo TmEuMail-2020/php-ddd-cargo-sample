@@ -1,7 +1,8 @@
 tasks:
   - init: |
       docker-compose pull
-      composer install
+      # must use composer v1, hence directly use project provided composer php archive file
+      php composer.phar install
     command: |
       cp .env.dist .env
       # to avoid "file not found" error

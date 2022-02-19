@@ -1,0 +1,8 @@
+tasks:
+  - init: |
+      docker-compose pull
+    command: |
+      mv .env.dist .env
+      # to avoid "file not found" error
+      chmod 777 .
+      docker-compose up

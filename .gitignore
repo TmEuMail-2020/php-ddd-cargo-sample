@@ -6,7 +6,7 @@ nbproject
 *.log
 .buildpath
 .DS_Store
-.idea
+# .idea
 .project
 .settings
 .env

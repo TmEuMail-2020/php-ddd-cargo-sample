@@ -17,7 +17,10 @@ services:
       - mariadb:mariadb
     volumes:
       - .:/var/www
-      - ./xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      # now use custom tmy image - https://github.dev/tmy2017/php-ddd-example/blob/2b7ae4f92c5619810efbe3252ca6171713c45cb2/.gitpod.gitpod-pstorm-with-php71-mysql8.Dockerfile#L50
+      - /usr/local/etc/xdebug2.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      # if not then download xdebug.ini and put in project root
+      # - ./xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
 
   mariadb:
     image: mariadb

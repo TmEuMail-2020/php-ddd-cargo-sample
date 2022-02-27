@@ -15,8 +15,9 @@ return [
                 //  Ref: https://stackoverflow.com/a/22927341/4127966
                 //'host' => '127.0.0.1',
                 'port' => '3307',
-                'user' => 'root',
-                'password' => '',
+                // info from docker-compose.yml
+                'user' => 'dev',
+                'password' => 'dev',
                 'dbname' => 'cargo_sample',
                 'charset' => 'utf8',
                 'driverOptions' => [

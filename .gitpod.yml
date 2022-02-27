@@ -7,6 +7,8 @@ tasks:
       yes | php composer.phar install
     command: |
       cp .env.dist .env
+      # database config
+      cp config/autoload/local.php.dist .config/autoload/local.php
       # to avoid "file not found" error
       chmod 777 .
       docker-compose up

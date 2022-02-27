@@ -14,7 +14,8 @@ return [
                 // if for host machine to execute migration, must NOT use localhost! 
                 //  Ref: https://stackoverflow.com/a/22927341/4127966
                 //'host' => '127.0.0.1',
-                'port' => '3307',
+                // due to inside container so really still in 3306 - sigh.. quite cognitive overload!
+                'port' => '3306',
                 // info from docker-compose.yml
                 'user' => 'dev',
                 'password' => 'dev',

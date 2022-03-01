@@ -1,4 +1,4 @@
-image: tmy2017/gitpod-pstorm-with-php71-mysql8:ver-1646165216
+image: tmy2017/gitpod-pstorm-with-php71-mysql8:ver-1646167266
 tasks:
   - init: |
       docker-compose pull

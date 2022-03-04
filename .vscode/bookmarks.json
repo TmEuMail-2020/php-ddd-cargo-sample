@@ -1,11 +1,41 @@
 {
 	"files": [
 		{
+			"path": "composer.json",
+			"bookmarks": [
+				{
+					"line": 30,
+					"column": 0,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "CargoBackend/src/Application/Booking/BookingService.php",
+			"bookmarks": [
+				{
+					"line": 96,
+					"column": 36,
+					"label": ""
+				}
+			]
+		},
+		{
 			"path": "CargoBackend/src/Model/Cargo/Cargo.php",
 			"bookmarks": [
 				{
 					"line": 16,
 					"column": 60,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "config/routes.php",
+			"bookmarks": [
+				{
+					"line": 13,
+					"column": 29,
 					"label": ""
 				}
 			]

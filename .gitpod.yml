@@ -22,3 +22,6 @@ ports:
   - port: 8080
     visibility: private
     onOpen: open-preview
+  # actually use 3307, this port is legacy from workspace-mysql, thus ignore to reduce confusion
+  - port: 3306
+    onOpen: ignore

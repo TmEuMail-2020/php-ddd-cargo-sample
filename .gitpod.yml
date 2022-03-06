@@ -18,6 +18,9 @@ tasks:
       # run migration INSIDE container, must NOT on host machine, see config/autoload/local.php.dist for details
       # wait for db port up then start migration 
       gp await-port 3307 && sleep 7 && yes | docker-compose exec php php bin/migrations.php migrations:migrate
+  - command: |
+      echo '!!! RUN `docker-compose exec php bin/behat` for e2e testing'
+      echo 'sometimes migrations might not work at start of workspace, then run again `docker-compose exec php php bin/migrations.php migrations:migrate`'
 ports:
   - port: 8080
     visibility: private

@@ -5,6 +5,13 @@ PHP 7 port of the cargo sample used in Eric Evans Domain-Driven Design book
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/codeliner/php-ddd-cargo-sample/badges/quality-score.png?s=d68042d97e40904ec369e137b60a1076509298f8)](https://scrutinizer-ci.com/g/codeliner/php-ddd-cargo-sample/)
 [![Build Status](https://travis-ci.org/codeliner/php-ddd-cargo-sample.png?branch=master)](https://travis-ci.org/codeliner/php-ddd-cargo-sample)
 
+## Gitpodified - how to use
+
+Container first approach - instead of installing platform tools (ex: Selenium Standalone Server & Chrome) on host machine 
+### Run tests
+
+* Unit Tests: docker-compose exec bin/phpunit CargoBackend/tests/
+* E2E Tests: docker-compose exec bin/behat
 ## Cargo Sample Reloaded
 
 After two years of inactivity a new version of the PHP DDD Cargo Sample is available [2015/12/07].
